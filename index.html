@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer="true"></script>
+    <script src="questions.js" defer="true"></script>
+</head>
+<body>
+    <div class="App">
+        <div class="img">
+            <img src="img/Question.svg" alt="image">
+        </div>
+        <div class="text">
+            <h3>quiz app with fixed time</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi impedit ex voluptas labore saepe consectetur maiores voluptatem excepturi tenetur ipsum.</p>
+            <h3>quiz app with fixed time</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ab.</p>
+        </div>
+        <div class="MyBtn">
+            <button>Start Quiz</button>
+        </div>
+    </div>
+    <div class="rules">
+        <div class="rulesTitle">Some Rules of this Quiz</div>
+        <div class="rulesBox">
+            <ol>
+                <li>Yow will have only <span style="color:#007bff">15 seconds</span> per each questions.</li>
+                <li>Once you select your answer, it csn't be undone.</li>
+                <li>You can't select any option once time goes off.</li>
+                <li>You can't exit from the Quiz while you're playing.</li>
+                <li>You'll get points on the basis of your correct answers.</li>
+            </ol>
+        </div>
+        <div class="RulesButton">
+            <button class="exitBtn">exit quiz</button>
+            <button class="cont">continue</button>
+        </div>
+    </div>
+    <div class="Questions">
+        <header class="questionHeader">
+            <div class="title">start exam</div>
+            <div class="time_section">
+                <div class="timeLeft">time left</div>
+                <div class="seconds">15</div>
+            </div>
+            <div class="scrolling"></div>
+        </header>
+        <div class="section">
+            <div class="xyz"></div>
+            <div class="myOptions"></div>
+        </div>
+        <footer>
+            <div class="footerLeft"></div>
+            <button class="FooterButton">next que</button>
+        </footer>
+    </div>
+    <div class="Result_box">
+        <div class="Result_img">
+            <img src="img/winner.svg" alt="winner">
+        </div>
+        <div class="complete_exam">
+            <span>You've completed your exam.</span>
+        </div>
+        <div class="score"></div>
+        <div class="Result_button">
+            <button class="restart1">replay</button>
+        </div>
+    </div>
+</body>
+</html>
