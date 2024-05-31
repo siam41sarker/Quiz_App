@@ -9,6 +9,7 @@ const Result_box = document.querySelector(".Result_box");
 const scoreX = document.querySelector(".score");
 const restart1 = document.querySelector(".Result_button .restart1");
 const timeLeft = document.querySelector(".timeLeft");
+let FooterButton = document.querySelector(".FooterButton");
 myBtn.onclick = ()=>
     {
         rules.classList.add("activeRules");
@@ -25,7 +26,6 @@ cont.onclick = ()=>
         setTimingPart(15);
         setScrollingPart(0);
     }
-let FooterButton = document.querySelector(".FooterButton");
 let ques_count = 0;
 let TimeCounter;
 let scrollCounter;
